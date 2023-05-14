@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap');
+
+/* começo da página home */ 
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    
+	margin: 0 auto;
+}
+
+
+.container{
+    max-width: 1200px; /*Largura maxima do conteudo do site*/
+    width: 100%;
+	margin: 0 auto;
+}
+
+/* Início do site - Topo Menu */
+
+header{
+	background-color:  rgb(255, 255, 255);
+}
+
+nav{
+	padding: 3.5%;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+nav img{
+	width: 83px;
+	height: 78px;
+	position: absolute;
+	left: 29%;
+	top: 11px;
+}
+
+
+nav ul li{
+	display: inline;
+	padding: 2px;
+	font-size: 1.25em;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+  	color: #000;
+  	
+  	
+}
+
+nav ul li a:hover{
+	background-color: rgb(210, 180, 140, 0.5);
+	padding:15px
+		
+}
+
+.menu-fixo{
+	position: fixed;
+	top:0;
+	z-index: 9999;
+	width: 100%;
+	background: rgb(255, 255, 255, 0.8);
+	animation: fadeIn 3s ease-in-out;
+}
+
+/* Fim do topo menu */
+
+
+/* BANNER */
+
+.banner img{
+	width: 100%;
+}
+
+/* FIM BANNER */
+
+
+/* Começo do sobre */
+
+.sobre{
+	margin: 1% 0;
+}
+
+.sobre div{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.sobre div article{
+	width: 45%;
+	padding-bottom: 5%;
+}
+
+.sobre p {
+	font-family: 'Noticia Text', serif;
+    font-size: 1em;
+    text-align: justify;
+    padding: 5%;
+	margin-top: 10%;
+    line-height: 25px;
+}
+
+.sobre article img{
+	width: 100%;
+    margin-top: 55px;
+}
+
+/* Fim Sobre */
+
+
+/* Começo cardápio */
+
+.cardapio{
+	background-image: url(../img/Cardapio/cardapio.png);
+	background-attachment: fixed;
+	text-align: center;
+	padding: 12%;
+	font-size: 1.75em;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.cardapio a{
+	text-decoration: none;
+    font-weight: 650;
+    padding: 3%;
+    border: 2px solid black;
+    background: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    border-radius: 5px;
+	
+}
+
+.cardapio a:hover{
+	background-color: rgb(210, 180, 140, 0.5);
+}
+
+/* Fim do Cardápio */
+
+
+/* Começo Horário e reservas */
+
+.horario div{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.horario div article{
+	width: 45%;
+	padding-bottom: 5%;
+}
+
+.horario article img{
+	width: 100%;
+    margin-top: 10%;
+}
+
+.horario img{
+	padding: 0% 10% 0%;
+    border-right: 2px solid black;
+}
+
+figcaption{
+	padding-top: 1%;
+	padding-bottom: 8%;
+    text-align: center;
+    font-size: 1.8125em;
+    margin-left: 17%;
+	
+}
+
+.horario a{
+	text-decoration: none;
+	background: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+	font-size: 22px;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 700;
+	padding: 3% 6%;
+	border: solid 2px black;
+	margin-left: 42%;
+	
+}
+
+.horario a:hover{
+	background-color: rgb(210, 180, 140, 0.5);
+}
+
+
+.horario h2{
+	font-family:'Titillium Web', sans-serif;
+	text-align: justify;
+	margin-left: 25%;
+	margin-top: 15%;
+}
+
+.horario p
+{
+	font-size: 1.1em;
+    text-align: justify;
+	margin-left: 20%;
+    padding: 1%;
+    line-height: 25px;
+	font-family: 'Noticia Text', serif;
+}
+
+/* Fim horário e reservas */
+
+
+/* Começo instagram */
+
+.instagram{
+	background-color: #e8dcca;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.instagram h2{
+	font-family:'Titillium Web', sans-serif;
+	text-align: center;
+
+}
+
+.galeria{
+    padding: 2% 0; 
+}
+
+.galeria img{
+	
+	border: 2px solid white;
+	
+}
+
+.galeria .slick-slide{
+	margin: 0 10px;
+}
+
+/* Fim instagram */ 
+
+
+/* Começo rodapé */ 
+
+footer{
+	background-color: #ffffff;
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+footer h3{
+	font-size: 1.4375em;
+	padding: 1%;
+}
+
+footer img{
+	
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 30px;
+    height: 27px;
+}
+
+/* Fim rodapé */ 
+
+
+/* Fim página home */ 
+
+
+/* Começo página Reserva */ 
+
+hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.reserva-agenda{
+	
+	margin-top: 5%;
+	margin-bottom: 2%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.reserva-agenda div{
+	justify-content: space-around;
+}
+
+.reserva-agenda img{
+	border: 2px solid black;
+	margin-top: 3%;
+}
+
+.reserva-agenda article{
+	width: 45%; 
+}
+
+
+.reserva-agenda article img{
+	width: 100%
+	
+}
+
+.reserva-agenda h2{
+	font-family:'Titillium Web', sans-serif;
+	padding-bottom: 2%;
+
+}
+
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel],
+.form input[type=datetime-local],
+.form textarea {
+	background: rgb(255, 255, 255, 0.5);
+	border: solid thin #1D1C1C;
+	width: 80%;
+	padding: 1.5%;
+	color: #000;
+	margin-bottom: 2%;
+	justify-content: center;
+
+}
+
+.reserva-agenda label{
+	font-size: 1.2em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+}
+
+.form textarea{
+	resize: none;
+}
+
+.form input[type=submit]{
+	background: rgb(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    border: 2px solid black;
+    padding: 1% 8%;
+    cursor: pointer;
+    border-radius: 5px;
+  
+}
+
+.mensagem-reserva{
+	font-family:'Noticia Text', serif ;
+	font-size: 1.3em;
+	margin-left: 55%;
+	padding-bottom: 1%;
+	color: green;
+}
+
+/* Fim da página reserva */ 
+
+
+/* Começo da página contato */
+
+.contato{
+	background-color: #e8dcca;
+	padding: 1.5%;
+
+}
+
+.box-contato{
+	background: rgb(255, 255, 255, 0.8);
+	border: 1.5px solid black;
+    border-radius: 0.25rem;
+	width: 60%;
+    margin: 0 auto;
+	margin-top: 1%;
+    margin-bottom: 1.5%;
+}
+
+.box-contato h2{
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 1%;
+	padding-top: 3%;
+}
+
+.whats{
+	padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+
+.whats h3{
+	font-family:'Noticia Text', serif ;
+	margin-top: 12px;
+    margin-left: 5px;
+	
+}
+
+.mail{
+	padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail h3{
+	font-family:'Noticia Text', serif ;
+	margin-top: 12px;
+    margin-left: 5px;
+}
+
+/* começo página login adm */
+
+
+/* Começo LOGIN */
+
+.ADM{
+	background-image: url(../img/Adm/adm-background.png);
+    background-attachment: fixed;
+	padding-top: 10%;
+}
+
+.box-login{
+	background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    width: 40%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+}
+
+.box-login h2{
+	background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+	text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 5%;
+}
+
+.box-login form{
+	width: 100%;
+    text-align: center;
+}
+
+.box-login input[type=text],
+.box-login input[type=password]{
+	background: rgb(255, 255, 255, 0.5);
+    border: solid thin #1D1C1C;
+    border-radius: 5px;
+    width: 60%;
+    padding: 3%;
+    color: #000;
+    margin-bottom: 2%;
+}
+
+.text-danger{
+	color: red;
+    font-family: 'Titillium Web';
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+.box-login input[type=submit]{
+	background: rgb(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    border: 2px solid black;
+    padding: 1% 9%;
+	margin-top: 1%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Fim página LOGIN */
+
+
+/* Página Home ADM */
+
+.home-icons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.home-icons img{
+	width: 300px;
+}
+
+.links-nav{
+	display: flex;
+    justify-content: space-around;
+}
+
+.links-nav a{
+	text-decoration: none;
+    background: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    padding: 1% 1%;
+    width: 15%;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 7px;
+}
+
+/* página de consulta*/
+
+
+/* Navegação da consulta */
+
+.vert {
+	background-color: rgb(0, 0, 0, 0.4);
+	border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.vert li{
+	font-size: 1em;
+}
+
+.vert a {
+	font-size: 1em;
+    width: 150px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 40px;
+	
+}
+
+
+nav .vert li a:hover{
+	padding: 0;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+}
+
+/*fim navegação consulta -*/
+
+.consulta{
+	margin-top: 2%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.card-box{
+	border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+	width: 100%;
+	margin:0 auto;
+	padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+
+.card-box h2{
+	text-align: center;
+	background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.card-body{
+	width: 100%;
+	font-family:'Noticia Text', serif ;
+}
+
+
+
+.conteudo{
+	padding-top: 3%;
+}
+
+.box-result{
+	width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0,0,0,.125);
+	border-radius: 0.25rem;
+}
+
+.box-result h3{
+	font-weight: 500;
+	padding-top: 1%;
+	margin-left: 2%;
+}
+
+.box-result p {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 2%;
+}
+
+.conteudo form input[type=text]{
+	background: rgb(255, 255, 255, 0.5);
+	border: solid thin #1D1C1C;
+	margin-left: 10%;
+	width: 60%;
+	padding: 1.5%;
+	color: #000;
+	margin-bottom: 2%;
+	justify-content: center;
+}
+
+.conteudo button{
+	background: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    border-radius: 5px;
+    margin-left: 1%;
+    width: 135px;
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+div .alert{
+	width: 100%;
+	margin: 0 auto;
+}
+
+div .alert h2{
+	background: none;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    border: none
+}
+
+.alert img{
+	width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Fim página consulta - ABA HOME */
+
+
+/* Navegação da consulta - ABA MESA */
+
+.mesas{
+	padding-top: 3%;
+    margin: 0 auto;
+}
+
+.mesas form input[type=text]{
+	background: rgb(255, 255, 255, 0.5);
+    border: solid thin #1D1C1C;
+    margin-left: 4%;
+    padding: 1.5%;
+    color: #000;
+    margin-bottom: 2%;
+}
+
+.mesas select{
+	height: 50px;
+	border: solid thin #1D1C1C;
+	padding: 1.5%;
+	margin-left: 1%;
+	font-weight: 700;
+}
+
+.mesas button{
+	background: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding-top: 1%;
+	margin-left: 1%;
+    padding-bottom: 1%;
+	border: 2px solid black;
+    border-radius: 3px;
+    width: 80px;
+    font-size: 1em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+.atualizou{
+	color: green;
+    font-size: 1.3em;
+    margin-left: 4%;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.vazio{
+	color: red;
+    font-size: 1.3em;
+    margin-left: 4%;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.box-mesas{
+    margin: 0 auto;
+    margin-top: 3%;
+	width: 100%;
+   
+}
+
+.box-mesas h3{
+	background-color: #f8f9fa;
+    border-top: 2px solid rgba(0,0,0,.125);
+    border-bottom: 2px solid rgba(0,0,0,.125);
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 1%;
+    margin-bottom: 1.8%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 3%;
+    display: flex;
+}
+
+
+.text-green{
+	color: green;
+	margin-left: 1%;
+}
+
+.text-red{
+	color: red;
+	margin-left: 1%;
+}
+
+/* Fim página consulta - ABA MESAS */
+
+
+@media not all and (max-width:480px){
+	.abrir-menu,
+	.fechar-menu{
+		display: none;
+	}
+}
+
+
+
+/* MOBILE 480 */
+@media (max-width:480px) {
+
+	.topo{
+		flex-direction: row; /*row = linhas*/
+		align-items: center;
+	}
+	
+	.abrir-menu{
+		background:url(../img/icons/menu.svg) no-repeat;
+		padding: 20px;
+		display: block;
+		border: 0;
+	}
+	
+	.fechar-menu{
+		background:url(../img/icons/fechar.svg) no-repeat;
+		padding: 20px;
+		display: block;
+		border: 0;
+	}
+	
+	.topo nav{
+		
+		background:rgba(13,13,13,0.8);
+		max-width: 200px;
+		width: 35%;
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		right: -250px;
+		transition: right .5s ease-out;
+	}
+	
+	.topo nav ul{
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0px;
+	}
+
+	nav ul li a{
+		color: #ffff;
+    	line-height: 2;
+    	
+	}
+	
+	.menu-ativo
+	.topo nav{
+		right: 0;
+	}
+
+	.banner{
+		display: none;
+	}
+
+
+	.sobre div{
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Noticia Text', serif;
+		
+	}
+
+	.sobre div article{
+		width: 90%;
+	}
+
+
+	.sobre article img{
+		margin-top: 1%;
+		border: 2px solid black;
+	}
+
+	.sobre p{
+		padding: 8px;
+    	margin-top: 15px;
+	}
+
+
+	.cardapio a{
+		display: block;
+		width: 194px;
+		height: 64px;
+		margin: 0 auto;
+		line-height: 32px;
+		text-decoration: none;
+		background: rgb(0, 0, 0, 0.5);
+		color: #ffffff;
+		border-radius: 5px;
+	}
+
+	.horario div{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.horario div article{
+		width: 90%;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 2.5%;
+	}
+
+	.horario img {
+		border: 2px solid black;
+		padding: 0;
+	}
+
+	.horario figcaption{
+		font-family: 'Titillium Web', sans-serif;
+		font-weight: 600;
+		text-align: center;
+		margin:0
+	}
+
+	.horario a{
+		text-align: center;
+		margin:0 auto;
+		background: rgb(0, 0, 0, 0.6);
+    	color: #ffffff;
+    	border-radius: 5px;
+		
+	}
+
+	.horario h2{
+		font-family: 'Titillium Web', sans-serif;
+		text-align: center;
+		border-top: 2px solid #000;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-top: 5%;
+		margin: 0;
+	}
+
+	.horario p{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		line-height: 30px;
+		font-family: 'Noticia Text', serif;
+	}
+
+	.instagram{
+		display: none;
+	}
+
+	hr{
+		display: none;
+	}
+
+	.reserva-agenda{
+		flex-direction: column;
+		align-items: center;
+		font-family: 'Noticia Text', serif;
+		padding-bottom: 4%;
+	}
+
+	.reserva-agenda article{
+		width: 90%;
+	}
+
+	.reserva-agenda h2{
+		text-align: center;
+	}
+
+	.reserva-agenda form{
+		padding-left: 10%;
+	}
+	
+	.form input[type=submit]{
+		margin-left: 24%;
+	}
+
+	.contato{
+		padding: 3%;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fff;
+	}
+
+	.box-contato{
+		width: 90%;
+	}
+
+	footer{
+		background-color: #e8dcca;
+	}
+
+}
