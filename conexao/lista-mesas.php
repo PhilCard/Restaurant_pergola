@@ -6,95 +6,94 @@
     if ($result->num_rows > 0){
 
         while ($row = $result->fetch_assoc()){
+
+            // <--------- Início de Listagem das mesas disponíveis ---------> //
             
-            if($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL") {
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif ($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL")
-            
-            {
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif ($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL") {
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-                
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL")
-            {
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL")
-            {
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "DISPONÍVEL"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "DISPONÍVEL"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-green'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif ($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-red'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "OCUPADA" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "OCUPADA" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-red'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "OCUPADA" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-red'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "OCUPADA" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-red'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "OCUPADA" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-                
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-red'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "OCUPADA" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA") {
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-red'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "OCUPADA" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-red'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "OCUPADA" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-red'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "OCUPADA" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-red'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
-            } elseif($row["Mesa1"] == "DISPONÍVEL" && $row["Mesa2"] == "DISPONÍVEL" && $row["Mesa3"] == "DISPONÍVEL" && $row["Mesa4"] == "DISPONÍVEL" && $row["Mesa5"] == "DISPONÍVEL" && $row["Mesa6"] == "DISPONÍVEL" && $row["Mesa7"] == "DISPONÍVEL" && $row["Mesa8"] == "DISPONÍVEL" && $row["Mesa9"] == "DISPONÍVEL" && $row["Mesa10"] == "OCUPADA"){
-
-                echo "<div class='box-mesas'> <h3> Mesa 1 - status : <p class='text-green'>   " . $row["Mesa1"]." </p> </h3>" . " <h3> Mesa 2 - status : <p class='text-green'> " . $row["Mesa2"]. "</p> </h3>" . "<h3> Mesa 3 - status : <p class='text-green'> " . $row["Mesa3"] . "</p> <h3> Mesa 4 - status : <p class='text-green'> " . $row["Mesa4"]. "</p> <h3> Mesa 5 - status : <p class='text-green'> " . $row["Mesa5"] . "</p> <h3> Mesa 6 - status : <p class='text-green'> " . $row["Mesa6"] ."</p> <h3> Mesa 7 - status : <p class='text-green'> " . $row["Mesa7"] . "</p> <h3> Mesa 8 - status : <p class='text-green'> " . $row["Mesa8"] . "</p> <h3> Mesa 9 - status : <p class='text-green'> " . $row["Mesa9"] . "</p> <h3> Mesa 10 - status : <p class='text-red'> " . $row["Mesa10"] . "</p> </h3> </div>";
-
+            if($row["Mesa1"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 1 - status : </h3> <p class='text-green'> Disponível </p> </div>";
             }
 
+            if($row["Mesa2"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 2 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa3"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 3 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa4"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 4 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa5"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 5 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa6"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 6 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa7"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 7 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa8"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 8 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa9"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 9 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+            if($row["Mesa10"] == "DISPONÍVEL") {
+                echo "<div class='box-mesas'> <h3> Mesa 10 - status : </h3> <p class='text-green'> Disponível </p> </div>";
+            }
+
+             // <--------- Fim de Listagem das mesas disponíveis ---------> //
+
+
+            // <--------- Início de Listagem das mesas ocupadas ---------> //
+
+            if($row["Mesa1"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 1 - status : </h3> <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa2"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 2 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa3"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 3 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa4"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 4 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa5"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 5 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa6"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 6 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa7"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 7 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa8"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 8 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa9"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 9 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+
+            if($row["Mesa10"] == "OCUPADA") {
+                echo "<div class='box-mesas'> <h3> Mesa 10 - status : <p class='text-red'> Ocupada </p> </div>";
+            }
+            // <--------- Fim de Listagem das mesas ocupadas ---------> //
         }
 
     } else {

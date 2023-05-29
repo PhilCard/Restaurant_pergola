@@ -32,8 +32,5 @@
         <hr>
         <!---- Rodapé ---->
         <?php require_once('conteudo/rodape.php'); ?>
-        <script src="js/jquery-3.4.1.slim.min.js"> </script>
-        <script src="js/slick.js"> </script>
-        <script src="js/galery.js"> </script>
     </body>
 </html>

@@ -6,8 +6,6 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="icon" type="image/x-icon" href="pergola-icon.ico">
-        <link rel="stylesheet" type="text/css" href="css/slick.css">
-        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Restaurante Pergola </title>
     </head>
@@ -50,7 +48,7 @@
 		                </div>
 
                         <div>
-                        <input type="submit" name="submit" value="Enviar">
+                            <input type="submit" name="submit" value="Enviar">
                         </div>
                         
                     </form>
@@ -88,9 +86,5 @@
         <hr>
         <!---- Rodapé ---->
         <?php require_once('conteudo/rodape.php'); ?>
-        
-        <script src="js/jquery-3.4.1.slim.min.js"> </script>
-        <script src="js/slick.js"> </script>
-        <script src="js/galery.js"> </script>
     </body>
 </html>
