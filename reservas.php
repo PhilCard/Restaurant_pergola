@@ -1,5 +1,3 @@
-<?php require_once('conexao/conexao.php'); ?>
-
 <!DOCTYPE html> 
 <html lang="pt-br">
     <head>
@@ -24,59 +22,43 @@
                 </article>
 
                 <article>
-                    <h2> Formulário de Reserva </h2>
-                    <form action="" method="post" class="form" autocomplete="off"> 
-                        <div>
-                            <input type="text" placeholder="Nome: " required name="nome">
-                        </div>
-            
-                        <div>
-                            <input type="text" placeholder="Telefone: " required name="Tel">
-                        </div>
-                        
-                        <div>
-                            <label for="party">Selecione data e horário que deseja reservar</label>
-                            <input
-                            id=""
-                            type="datetime-local"
-                            name="databr"
-                            value="2023-01-01T00:00" />
+                    <div class="form-container">
+                        <h2>Fale Conosco</h2>
+                        <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
                         </div>
 
-                        <div>
-				            <textarea name="ps" placeholder="Anote aqui sua observação caso necessite de algo específico para sua reserva" cols="10" rows="10" >   </textarea>
-		                </div>
-
-                        <div>
-                            <input type="submit" name="submit" value="Enviar">
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
                         </div>
+
                         
-                    </form>
+                        <label for="agendamento">Escolha a data e hora</label>
+                        <input type="datetime-local" id="agendamento" name="agendamento"
+                            min="2025-01-01T10:00"
+                            max="2025-12-31T22:00"
+                            step="900">
+
+                        <div class="form-group">
+                            <label for="observacao">Observação</label>
+                            <textarea id="observacao" name="observacao" placeholder="Escreva aqui sua observação..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                        </form>
+                    </div>
                 </article>	
 	        </section>
             <?php 
 
-                date_default_timezone_set('America/Sao_Paulo');
+                //date_default_timezone_set('America/Sao_Paulo');
 
                 if(isset($_POST['submit'])){
 
-                    # Variáveis que irão encapsular os valores dos inputs #
-                    $Nome= $_POST['nome'];
-                    $Tel= $_POST['Tel'];
-                    $Horario= $_POST['databr'];
-                    $obs= $_POST['ps'];
-                    
-                    # Aqui será realizado o insert de dados no banco de dados, referente a reserva do cliente, enviando os valores que foram encapsulados acima #
-                    $sql = "INSERT INTO reserva(idReserva,Nome,Telefone,Horario,Obs) VALUES (NULL,'$Nome', '$Tel', '$Horario', '$obs')";
-
-                    if(mysqli_query($conn, $sql)){
-                        echo "<p class='mensagem-reserva'> Mesa reservada com sucesso! </p>";
-                    } else {
-                        echo "error: " .$sql . "" . mysqli_error($conn);
-                    }
-                    mysqli_close($conn);
-
-                    
+                   
                 }
 
             ?>

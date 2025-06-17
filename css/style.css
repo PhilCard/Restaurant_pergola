@@ -316,41 +316,93 @@ hr {
 }
 
 
-.form input[type=text],
-.form input[type=email],
-.form input[type=tel],
-.form input[type=datetime-local],
-.form textarea {
-	background: rgb(255, 255, 255, 0.5);
-	border: solid thin #1D1C1C;
-	width: 80%;
-	padding: 1.5%;
-	color: #000;
-	margin-bottom: 2%;
-	justify-content: center;
+.form-container {
+	background: white;
+	padding: 40px;
+	border-radius: 12px;
+	max-width: 500px;
+	width: 100%;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
 
-}
+  .form-group {
+	margin-bottom: 20px;
+  }
 
-.reserva-agenda label{
-	font-size: 1.2em;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
+  label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+	color: #374151;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 15px;
+	background-color: #f9fafb;
+	transition: border 0.3s;
+  }
+
+  input:focus,
+  textarea:focus {
+	border-color: #3b82f6;
+	outline: none;
+	background-color: #fff;
+  }
+
+  textarea {
+	resize: none;
+  }
+  
+  input[type="datetime-local"] {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #fff;
+	color: #333;
+  }
+
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+	filter: invert(0.5);
+	cursor: pointer;
+  }
+
+.reserva-agenda h2{
+	font-family:'Titillium Web', sans-serif;
+	padding-bottom: 2%;
+
 }
 
 .form textarea{
-	resize: none;
+	
 }
 
+.btn-enviar {
+	font-family: 'Titillium Web', sans-serif;
+	width: 100%;
+	padding: 12px;
+	background: rgb(0, 0, 0, 0.8); /* Preto fosco */
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+	background-color: #1f2937; /* tom mais claro no hover */
+  }
+
 .form input[type=submit]{
-	background: rgb(0, 0, 0, 0.5);
-    color: #ffffff;
-    font-size: 1.3em;
-    font-weight: 600;
-    font-family: 'Titillium Web', sans-serif;
-    border: 2px solid black;
-    padding: 1% 8%;
-    cursor: pointer;
-    border-radius: 5px;
   
 }
 
@@ -361,7 +413,6 @@ hr {
 	padding-bottom: 1%;
 	color: green;
 }
-
 /* Fim da página reserva */ 
 
 
